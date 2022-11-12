@@ -19,7 +19,7 @@ My challenge is to create an e-commerce back end. I will be working with Express
 2. Use the recommended file structure to organize the files.
 3. Installing npm using "npm i" in the terminal.
 4. Sign into my sql and source the sql files needed to run the application
-5. odify the code based on the Acceptance criteria.
+5. Modify the code based on the Acceptance criteria.
 6. Full fill the acceptances criteria grading requirements.
 7. Add, Commit, and Push Repo to Github.
 8. Follow the instructions to submit the Challenge for review.
@@ -30,7 +30,7 @@ My challenge is to create an e-commerce back end. I will be working with Express
 ## Testing
 ```
 1. npm i
-2. mysql -u root -p
+2. mysql -u root -p // sign into MySQL
 3. SOURCE (insert file name) // inject data
 4. node server.js // create the tables
 5.
