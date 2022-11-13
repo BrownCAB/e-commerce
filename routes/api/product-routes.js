@@ -26,10 +26,14 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Category and Tag data
   try{
     const productById = await Product.findOne({
-      include: [
-        { id: Category },
-        { id: Tag, through: ProductTag }
+      where: [
+        { id: Product},
+      ],
+        inlucde:[ 
+          { model: Category },
+        { model: Tag, through: ProductTag }
       ]
+      
     })
     res.status(200).json(productById)
   } catch (err) {
@@ -116,8 +120,7 @@ router.delete('/:id', async (req, res) => {
   try{
     const deleteOneProduct = await Product.destroy({
       where: [
-        { id: Category },
-        { id: Tag, through: ProductTag }
+        { id: Product }
       ]
   })
   res.status(200).json(deleteOneProduct)

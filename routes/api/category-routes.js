@@ -23,6 +23,9 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Products
   try{
     const categoryById = await Category.findOne({
+      where: [
+        { id: Category }
+      ],
       include: [
         { model: Product }
       ]
@@ -38,7 +41,7 @@ router.post('/', async (req, res) => {
  try{
   const createCategory = await Category.create({
     category_name: [
-      {requirement: Category}
+      { category_name: Category }
     ]
   })
   res.status(200).json(createCategory)
@@ -52,7 +55,7 @@ router.put('/:id', async (req, res) => {
   try{
     const updateCategory = await Category.update({
       where:[
-        {model: Category}
+        { id: Category }
       ]
     })
     res.status(200).json(updateCategory)
@@ -66,7 +69,7 @@ router.delete('/:id', async (req, res) => {
   try{
     const deleteCategoryById = await Category.destroy({
       where: [
-        { model: Category }
+        { id: Category }
       ]
   })
   res.status(200).json(deleteCategoryById)

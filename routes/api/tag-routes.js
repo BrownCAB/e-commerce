@@ -23,6 +23,9 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Product data
   try {
     const tagData = await tag.findOne({
+      where: [
+        { id: Tag }
+      ],
       include: [
         { model: Product, through: ProductTag }
       ]
@@ -38,7 +41,7 @@ router.post('/', async(req, res) => {
   try{
     const createTag = await Tag.create({
       tag_name:[
-        {requirement: Tag}
+        { tag_name: Tag }
       ]
     })
     res.status(200).json(createTag)
@@ -52,7 +55,7 @@ router.put('/:id', async (req, res) => {
   try{
     const updateTag = await Tag.update({
       where:[
-        {id: Tag}
+        { id: Tag }
       ]
     })
     res.status(200).json(updateTag)
@@ -66,7 +69,7 @@ router.delete('/:id', async (req, res) => {
   try{
     const deleteTagById = await Tag.destroy({
       where: [
-        { model: Tag }
+        { id: Tag }
       ]
   })
   res.status(200).json(deleteTagById)
