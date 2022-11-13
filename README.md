@@ -25,15 +25,17 @@ My challenge is to create an e-commerce back end. I will be working with Express
 8. Follow the instructions to submit the Challenge for review.
 
 ## Usage
-
+To use this application a user needs to start the server on local host then use an application like Insomina to make requests to the database
 
 ## Testing
 ```
-1. npm i
-2. mysql -u root -p // sign into MySQL
-3. SOURCE (insert file name) // inject data
-4. node server.js // create the tables
-5.
+1. Add a .env file 
+2. npm i // to install npm
+3. mysql -u root -p // sign into MySQL
+4. SOURCE filename.sql // inject data
+5. node server.js // create the tables
+6. npm run watch to // 
+7. Open Insomia and use the structure and links to run CRUD test.
 ```
 ## Credits
 Instructor, 2u Tutor, and etc.
@@ -41,5 +43,7 @@ Instructor, 2u Tutor, and etc.
 ## Questions
 Questions
 GitHub Username: BrownCAB
-E-mail: <a href="mailto:"brown.calah@hotmail.com"</a>
+<br>
+E-mail: <a href="mailto:brown.calah@hotmail.com">brown.calah@hotmail.com"</a>
+<br>
 Contact: E-mail
