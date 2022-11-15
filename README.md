@@ -25,7 +25,14 @@ My challenge is to create an e-commerce back end. I will be working with Express
 8. Follow the instructions to submit the Challenge for review.
 
 ## Usage
-To use this application a user needs to start the server on local host then use an application like Insomina to make requests to the database
+To use this application a user needs to start the server on local host then use an application like Insomina to make requests to the database.
+
+<img src="./assets/ecommerce.gif">
+  <br>
+  <a href="">Walkthrough Video</a> 
+  <br>
+  <a href="https://drive.google.com/file/d/1ecXYJdVnZwV-_Q-AcCY4g5Jm8qo-bzJ7/view?usp=sharing">Download Walkthrough Video</a> 
+  <br>
 
 ## Testing
 ```
