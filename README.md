@@ -31,7 +31,7 @@ To use this application a user needs to start the server on local host then use 
   <br>
   <a href="https://user-images.githubusercontent.com/110314270/201804264-ce4037b0-c1a4-4fff-af72-ac8b94326b3e.mp4">Walkthrough Video</a> 
   <br>
-  <a href="https://drive.google.com/file/d/1ecXYJdVnZwV-_Q-AcCY4g5Jm8qo-bzJ7/view?usp=sharing">Download Walkthrough Video</a> 
+  <a href="https://drive.google.com/file/d/1BuWP9NQsiRp8l2-LIDBxJXoWHFHi1ToF/view?usp=sharing">Download Walkthrough Video</a> 
   <br>
 
 ## Testing
