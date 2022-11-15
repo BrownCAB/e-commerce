@@ -27,10 +27,10 @@ router.get('/:id', async (req, res) => {
   try{
     const productById = await Product.findOne({
       where: [
-        { id: Product},
+        { id: req.params.id},
       ],
         inlucde:[ 
-          { model: Category },
+        { model: Category },
         { model: Tag, through: ProductTag }
       ]
       
@@ -110,7 +110,7 @@ router.put('/:id', (req, res) => {
     })
     .then((updatedProductTags) => res.json(updatedProductTags))
     .catch((err) => {
-      // console.log(err);
+      console.log(err);
       res.status(400).json(err);
     });
 });
@@ -120,7 +120,7 @@ router.delete('/:id', async (req, res) => {
   try{
     const deleteOneProduct = await Product.destroy({
       where: [
-        { id: Product }
+        { id: req.params.id }
       ]
   })
   res.status(200).json(deleteOneProduct)

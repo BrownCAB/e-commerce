@@ -22,9 +22,9 @@ router.get('/:id', async (req, res) => {
   // find a single tag by its `id`
   // be sure to include its associated Product data
   try {
-    const tagData = await tag.findOne({
+    const tagData = await Tag.findOne({
       where: [
-        { id: Tag }
+        { id: req.params.id }
       ],
       include: [
         { model: Product, through: ProductTag }
@@ -39,11 +39,9 @@ router.get('/:id', async (req, res) => {
 router.post('/', async(req, res) => {
   // create a new tag
   try{
-    const createTag = await Tag.create({
-      tag_name:[
-        { tag_name: Tag }
-      ]
-    })
+    const createTag = await Tag.create(
+      req.body
+    )
     res.status(200).json(createTag)
   } catch (err) {
     res.status(500).json(err);
@@ -53,9 +51,9 @@ router.post('/', async(req, res) => {
 router.put('/:id', async (req, res) => {
   // update a tag's name by its `id` value
   try{
-    const updateTag = await Tag.update({
+    const updateTag = await Tag.update(req.body, {
       where:[
-        { id: Tag }
+        { id: req.params.id }
       ]
     })
     res.status(200).json(updateTag)
@@ -69,7 +67,7 @@ router.delete('/:id', async (req, res) => {
   try{
     const deleteTagById = await Tag.destroy({
       where: [
-        { id: Tag }
+        { id: req.params.id }
       ]
   })
   res.status(200).json(deleteTagById)
