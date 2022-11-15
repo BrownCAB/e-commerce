@@ -34,8 +34,8 @@ To use this application a user needs to start the server on local host then use 
 3. mysql -u root -p // sign into MySQL
 4. SOURCE filename.sql // inject data
 5. node server.js // create the tables
-6. npm run watch to // 
-7. Open Insomia and use the structure and links to run CRUD test.
+6. npm run watch // to start nodemon server
+7. Open Insomia to run CRUD (GET, POST, PUT, DELETE) tests.
 ```
 ## Credits
 Instructor, 2u Tutor, and etc.
