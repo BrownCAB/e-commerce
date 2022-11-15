@@ -27,7 +27,7 @@ My challenge is to create an e-commerce back end. I will be working with Express
 ## Usage
 To use this application a user needs to start the server on local host then use an application like Insomina to make requests to the database.
 
-<img src="./assets/ecommerce.gif">
+<img src="">
   <br>
   <a href="https://user-images.githubusercontent.com/110314270/201804264-ce4037b0-c1a4-4fff-af72-ac8b94326b3e.mp4">Walkthrough Video</a> 
   <br>
