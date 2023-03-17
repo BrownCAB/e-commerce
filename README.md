@@ -12,7 +12,7 @@
 - [Questions](#Questions)
 
 ## Description
-My challenge is to create an e-commerce back end. I will be working with Express.js APIto configure using Sequelize. The goal is to connect to the database, and that should have functioning CRUD commands.
+My challenge is to create an e-commerce back end. I will be working with Express.js API to configure using Sequelize. The goal is to connect to the database, and that should have functioning CRUD commands.
 
 ## Installation
 1. To install application, clone using "git clone" command via the HTTP or SSH link on github.
